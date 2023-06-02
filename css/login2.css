@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    color: #fff;
+    /* background: url(../images/login2.jpg); */
+    backdrop-filter: blur(0.7px);
+    justify-content: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+.bg-img{
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+form{
+    margin-top: -100px;
+}
+.container{
+    position: relative;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+
+.box{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    position: absolute;
+    padding: 60px 20px 10px 20px;
+    height: 100vh;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.box-login{
+    position: absolute;
+    width: 85%;
+    left: 27px;
+}
+.box-register{
+    position: absolute;
+    width: 85%;
+    right: -350px;
+}
+.top-header{
+    text-align: center;
+    margin: 10px;
+}
+
+.top-header img{
+  position: relative;
+  width: 220px;
+  margin-bottom: 8px;
+}
+.input-group{
+    width: 100%;
+}
+.input-field{
+    flex-direction: column;
+    margin: 12px 0;
+    position: relative;
+    display: flex;
+}
+.input-box{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 45px 0 20px;
+    background: rgba(224, 223, 223, 0.7);
+    backdrop-filter: blur(10px);
+    outline: none;
+    border: 1px solid rgb(78, 78, 78);
+}
+.input-field label{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 15px;
+    color: #000;
+    transition: .2s ease-in-out;
+}
+.input-box:focus ~ label,
+.input-box:valid ~ label{
+    top: 2px;
+    font-size: 10px;
+    color: peru;
+    font-weight: 500;
+}
+
+
+
+.eye-area{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.eye-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+i{
+    position: absolute;
+    color: #444444;
+    cursor: pointer;
+}
+.agree{
+    /* display: inline-flex; */
+    font-size: 11px;
+    justify-content: center;
+    opacity: 0.8;
+    margin: auto;
+}
+.check{
+    margin-right: 8px;
+    width: 14px;
+}
+.input-submit{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: #fff;
+    box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.145);
+    cursor: pointer;
+    transition: .4s;
+}
+.input-submit:hover{
+    background: peru;
+    box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.32);
+}
+.forgot{
+    text-align: center;
+    font-size: 13px;
+    font: 500;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.forgot a:hover{
+  color: peru;
+}
+.btn{
+    color: #fff;
+    background: #4285F4;
+    text-align: center;
+
+}
+.btn img{
+    display: inline;
+    margin: -5px 5px;
+    width:23px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+
+
+
+
+.switch{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 85%;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid rgb(78, 78, 78);
+}
+.switch a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    width: 50%;
+    border-radius: 10px;
+    z-index: 10;
+}
+#btn{
+    position: absolute;
+    /* bottom: 0;
+    left: 0; */
+    display: inline-flex;
+    width: 145px;
+    height: 50px;
+    background: #cccccd;
+    border-radius: 10px;
+    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
+    /* transition: .2s ease-in-out; */
+}
+
+

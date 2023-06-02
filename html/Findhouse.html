@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	
+
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <title>HouseMate | Find house</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/find.css">
+
+   
+</head>
+<body style="background: #f4f4f4;">
+	
+	<div id="wrapper">
+		<div class="header"></div>
+		<header>
+			  <a class="logo" href="index.html"><img  src="../images/logo1.png" alt=""></a>
+        <ul class="navbar">
+            <li><a href="Findhouse.html">Find house</a></li>
+            <li><a href="Roommatch.html">Find Roomate</a></li>
+            <li><a href="AboutMe.html">About</a></li>
+            <li><a class="current" href="Contact.html">Contact</a></li>
+        </ul>
+
+        <div class="signin">
+            <a href=""><i class='bx bx-log-in'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+		</header>
+	
+
+		<div id="main-content">
+
+			<div id="sidebar">
+				<div id="menudoc">
+					<ul >
+						<form class="filter">
+						<li><h2>Filter</h2></li>
+						<li class="nut">
+							<div class="item">
+								<label>District</label>
+							<select name="quanhuyen">
+								<option>----</option>
+								<option value="lienchieu">Quận Liên Chiểu</option>
+								<option value="thanhkhe">Quận Thanh Khê</option>
+								<option value="camle">Quận Cẩm Lệ</option>
+								<option value="nguhanhson">Quận Ngũ Hành Sơn</option>
+								<option value="sontra">Quận Sơn Trà</option>
+								<option value="haichau">Quận Hải Châu</option>
+								<option value="hoangsa">Huyện đảo Hoàng Sa</option>
+								<option value="hoavang">Huyện Hòa Vang</option>
+							</select>
+							</div>
+							
+
+						</li>
+						<li class="nut">
+							 <div class="item">
+            <label>Min Price ($)</label>
+            <input name="minPrice" type="number">
+        </div>
+        
+							
+						</li>
+
+						<li class="nut">
+							 <div class="item">
+            <label>Max Price ($)</label>
+            <input name="maxPrice" type="number">
+        </div>
+        
+							
+						</li>
+						
+						
+												
+						
+						<div class="item_submit">
+							<!-- <button  >All</button> -->
+							<button  >Processing</button>
+
+							
+						</div>
+						
+						</form>
+					</ul>
+					
+				</div>
+				
+			</div>
+
+			<div id="content">
+				<!-- <div id="headline">
+
+					<ul class="tab">
+						<li class="tab-item active	" onclick="changeProductList('trend' , this)">Phổ biến</li>
+						<li class="tab-item" onclick="changeProductList('new' , this)">Mới nhất</li>
+						<li class="tab-item" onclick="changeProductList('like' , this)">Yêu thích</li>
+					</ul>
+
+				</div> -->
+				
+				
+				<!-- <ul id="trend" class="products"> -->
+					
+						<div id="list">
+
+					</div>
+					
+					
+					<!-- <li>
+						<div class="product-item">
+							<div class="product-top">
+								<a  class="product-thumb">
+									<img id="watch_in4"src="image/house1.png">
+								</a>
+								<a  id="watch-in4">Xem thông tin</a>
+								<div id="displayin4">
+
+    <form>
+      <div class="houseimg">
+        <div class="slideshow-container">
+
+  
+  <div class="mySlides 1">
+    <div class="numbertext">1 / 3</div>
+    <img class="showhouse" src="image/house1.png" >
+  </div>
+
+  <div class="mySlides 1">
+    <div class="numbertext">2 / 3</div>
+    <img class="showhouse" src="image/house2.png" >
+  </div>
+
+  <div class="mySlides 1">
+    <div class="numbertext">3 / 3</div>
+    <img class="showhouse" src="image/house1.png" >
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+     <div class="houseimg-button">
+     <div id="kbutton2">
+              <button type="submit" id="button-12">Đặt hẹn ngay</button>
+              
+            </div></div>
+        
+        
+      </div>
+      <div class="housein4">
+        <div class="housein4-top">
+          <table >
+            <tr>
+              <th><h1>House's name</h1></th>
+            </tr>
+            <tr>
+              <td>
+                Diện tích : 10m <sup>2</sup><br>
+                $$$: 1tr/tháng <br>
+                Địa chỉ: ... <br>
+                Tình trạng : còn <br>
+                Tiện ích : <br>
+                - <br>
+                - <br>
+                - <br>
+                Mô tả : <br>
+                - <br>
+                - <br>
+                - <br>
+
+                
+              </td>
+            </tr>
+
+          </table>
+        </div>
+        
+      </div>
+    </form>
+ 
+</div>
+
+							</div>
+							<div class="product-i4">
+								<a href="" class="product-cat">House1</a>
+								<a href="" class="product-address">Địa chỉ</a>
+								<div class="product-price">1000k/1 tháng</div>
+							</div>
+						</div>
+
+						
+					</li> -->
+				
+
+
+					
+					<!-- </ul> -->
+					<!-- Kết thúc trend -->
+
+
+					<!-- <ul id="new" class="products">
+						<div id="list"></div>
+					
+					
+					</ul> -->
+					<!-- kết thúc new -->
+
+					<!-- <ul id="like" class="products">
+						
+					<div id="list"></div>
+					
+					</ul> -->
+					<!-- kết thúc like -->
+				</div>
+				</div>
+			</div>
+<div class="footer">
+	<footer>
+        <div class="container">
+            <div class="ft-about">
+                <h2>Housemate</h2>
+                <p>HouseMate Lorem, ipstur voluptatibus doloremque temporibus.</p>
+                <ul class="social" >
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li> 
+                </ul>
+            </div>
+            <div class="ft-quick">
+                <h2>Quick links</h2>
+                <ul class="ul-col">
+                    <li><a href="">Find House</a></li>
+                    <li><a href="">Find Roomate</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="ft-quick">
+                <h2>Get help</h2>
+                <ul class="ul-col">
+                    <li><i class="fa-solid fa-envelope"></i><span><a href="">housemate@gmail.com</a></span></li>   
+                    <li><i class="fa-solid fa-phone"></i><span><a href="">+84 905 999 999</a></span></li>              
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    <div class="copyRight">
+        <p>HOUSEMATE &copy; 2023. All Rights Reserved</p>
+    </div>
+			
+
+</div>
+
+ 
+
+			
+			
+			
+		</div>
+
+		
+
+
+
+		
+		<script type="text/javascript" src="../js/find.js">
+
+}</script>
+	</body>
+	</html>
